@@ -1,0 +1,263 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #0a0e27;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #5b7cff;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #f0f0f0;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 700;
+    color: #5b7cff;
+}
+
+em {
+    font-style: italic;
+    color: #b0b0b0;
+}
+
+/* Layout - Header */
+header {
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    color: white;
+    padding: 2rem;
+    margin: -20px -20px 2rem -20px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+/* Layout - Main Content */
+main {
+    background-color: #151b3d;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Images */
+.profile-photo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #5b7cff;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(91, 124, 255, 0.3);
+}
+
+.decorative-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Lists */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+nav li {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+a:hover {
+    border-bottom-color: #a78bfa;
+}
+
+a:focus {
+    outline: 2px solid #d946ef;
+    outline-offset: 2px;
+}
+
+/* Forms */
+form {
+    background-color: #0f1329;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #5b7cff;
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #2a2f5a;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #1a1f3a;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #5b7cff;
+}
+
+button[type="submit"] {
+    background-color: #5b7cff;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4a68e6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(91, 124, 255, 0.4);
+}
+
+button[type="submit"]:focus {
+    outline: 2px solid #5b7cff;
+    outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #151b3d;
+    border-radius: 8px;
+    color: #999;
+    font-size: 0.9em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #a78bfa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        margin: -10px -10px 1rem -10px;
+        padding: 1.5rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
